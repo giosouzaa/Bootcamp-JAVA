@@ -9,16 +9,20 @@ public class TrianguloEquilatero {
         String a = "*";
         String n = " ";
         
-        for (int i=baseTriangulo;i>0;i--){
-
-
+        for (int i=1;i<=baseTriangulo;i++){
             String repeated = a.repeat(i); //define uma string de repetição a partir de uma string já definida anteriormente
             String repeatedSpace = n.repeat((baseTriangulo-i)/2);
-           
-            if (((baseTriangulo-i)%2) == 0) {
-                System.out.println(repeatedSpace + repeated);
-            }
+
+            if (baseTriangulo%2==0 && (baseTriangulo-i)%2 == 0){
+    
+                    System.out.println(repeatedSpace + repeated);
+
+            }else{
             
+                if (((baseTriangulo-i)%2) == 0) {
+                    System.out.println(repeatedSpace + repeated);
+                }
+            }
 
         }
     }

@@ -4,7 +4,7 @@
 public class TrianguloRetangulo {
     public static void main(String[] args) throws Exception {
 
-        int baseTriangulo = 6;
+        int baseTriangulo = 9;
         String a = "*";
         
         for (int i=1;i<=baseTriangulo;i++){
